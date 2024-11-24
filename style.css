@@ -1,0 +1,417 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  background-color: #f8f8f8;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  padding-top: 10px;
+  background-color: #f8f8f8;
+}
+
+#nav {
+  padding: 2px;
+  width: 100%;
+  height: 15vh;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  overflow: hidden;
+}
+
+#nav h1 {
+  font-size: 10vh;
+  letter-spacing: -7px;
+  height: 100%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  position: relative;
+}
+
+#nav h1::after{
+  content: "©️";
+  font-weight: 200;
+  font-size: 25px;
+  position: absolute;
+  top: 25%;
+  left: 82%;
+}
+
+#nav h1::before{
+  content: "models";
+  font-weight: 200;
+  font-size: 25px;
+  position: absolute;
+  letter-spacing: 0.8vw;
+  top: 70%;
+  left: 70%;
+}
+
+#nav h4 {
+  font-size: 3.5vh;
+  height: 110%;
+  width: 28%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 2px solid black;
+  font-weight: 500;
+}
+
+#nav h4:nth-last-child(2) {
+  width: 32%;
+}
+
+#nav h4:nth-last-child(1) {
+  width: 15%;
+}
+
+.center {
+  padding: 4vw;
+  height: 90vh;
+  width: 100%;
+}
+
+#content {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+#content video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#overlay {
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 2.5vw;
+  margin: 4vh;
+}
+
+#over1 h1 {
+  font-size: 10vh;
+  color: #f8f8f8;
+}
+
+#over1 h2 {
+  font-size: 3vh;
+  margin: 1vw;
+  padding: 3%;
+  color: #f8f8f8;
+  border: 2px solid beige;
+  border-radius: 50%;
+}
+
+#over1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#over2 {
+  border-top: 2px solid beige;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #f8f8f8;
+}
+
+#over2 h4 {
+  font-weight: 300;
+  font-size: 2vw;
+}
+
+#over2 img {
+  padding: 3vh;
+}
+
+#scroll {
+  height: 50vh;
+  width: 100%;
+  padding: 2vw;
+  white-space: nowrap; /* For making it in the one line */
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#container {
+  height: 100%;
+  width: 100%;
+  display: inline-block; /* It will make the vertical container in the horizontal container */
+  animation-name: move;
+  animation-duration: 7s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+#scroll img {
+  width: 13%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 50%;
+  object-position: top;
+  margin: 1.6vw;
+}
+
+@keyframes move {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(-100%);
+  }
+}
+
+#alphabet {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#alphabet h5 {
+  font-size: 2vw;
+  font-weight: 500;
+  border-bottom: 2px solid black;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+
+#alphabet h6 {
+  font-size: 1.5vw;
+  gap: 10px;
+  border: 2px solid rgba(224, 224, 224, 0.03);
+  border-radius: 50%;
+  padding: 0.5vw 0.6vw;
+  text-transform: uppercase;
+  font-style: italic;
+  cursor: pointer;
+  transition: all ease 0.4s;
+}
+
+#alphabet h6:hover {
+  border: 2px solid #000;
+}
+
+#alphabet h6:nth-child(3n) {
+  color: rgb(228, 206, 97);
+}
+
+#page2 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5vw;
+}
+
+#page2-left {
+  height: 100%;
+  width: 45%;
+  background-image: url(https://plus.unsplash.com/premium_photo-1669863283335-9370289707d7?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+}
+
+#page2-right {
+  height: 80%;
+  width: 45%;
+  background-image: url(https://plus.unsplash.com/premium_photo-1667520043080-53dcca77e2aa?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+}
+
+#page3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page3-left{
+    height: 100%;
+    width: 45%;
+    padding: 5vw;
+    font-size: 5vw;
+}
+
+#page3-right{
+    height: 100%;
+    width: 45%;
+}
+
+#page3-right img{
+    width: 60%;
+    height: 100%;
+}
+
+#page4{
+    border-top: 3px solid black;
+    height: 100%;
+    width: 100%;
+    padding: 2vw;
+    border-bottom: 3px solid black;
+}
+
+#page4 img{
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+#page5{
+    height: 100%;
+    width: 100%;
+    padding: 2vh;
+}
+
+#page5 h1{
+    font-size: 4vw;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2vw;
+}
+
+.elem{
+    height: 15vh;
+    width: 100%;
+    border-top: 2px solid #222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw;
+    position: relative;
+    transition: all ease 1s;
+}
+
+.elem h2{
+    font-size: 2vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 6%;
+}
+
+.elem h3{
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+.elem h4{
+    font-size: 1.1vw;
+    font-weight: 600;
+}
+
+#firstright{
+    width: 40%;
+    
+}
+
+#last{
+  border-bottom: 2px solid #222;
+}
+
+.elem img{
+  position: absolute;
+  height: 14vh;
+  width: 8vw;
+  border-radius: 50%;
+  object-fit: cover;
+  left: 20%;
+  opacity: 0;
+  transition: all ease 1s;
+}
+
+.elem:hover img{
+  opacity: 1;
+  left: 35%;
+}
+
+.elem :nth-last-child(2) img{
+  left: 60%;
+}
+
+.elem:hover{
+  background-color: #e6e6e6;
+}
+
+#page6{
+  height: 50vh;
+  width: 100%;
+  /* background-color: red; */
+  /* padding: 2vw; */
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#text{
+  padding: 1vw 1vw;
+  height: 20vh;
+  width: 100%;
+  /* background-color: beige; */
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  
+}
+
+#text h1{
+  /* background-color: blue; */
+  display: inline-block;
+  font-size: 8vw;
+  -webkit-text-stroke: 2px black;
+  color: transparent;
+  margin-right: 20px;
+  animation-name: scrolling;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  letter-spacing: 3px;
+}
+
+
+@keyframes scrolling {
+  from{
+    transform: translate(0%);
+  }to{
+    transform: translate(calc(-100% - 24px));
+  }
+}
+
+
+
+
+
+
+#footer{
+  height: 100%;
+  width: 100%;
+}
